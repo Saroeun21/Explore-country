@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chongqing - The Future City of China</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Chongqing_Nightscape.jpg/1920px-Chongqing_Nightscape.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .attraction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-red-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <span class="text-2xl font-semibold">Chongqing</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-yellow-300">About</a>
+                    <a href="#attractions" class="hover:text-yellow-300">Attractions</a>
+                    <a href="#map" class="hover:text-yellow-300">Map</a>
+                    <a href="#gallery" class="hover:text-yellow-300">Gallery</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#about" class="block py-2 hover:text-yellow-300">About</a>
+                <a href="#attractions" class="block py-2 hover:text-yellow-300">Attractions</a>
+                <a href="#map" class="block py-2 hover:text-yellow-300">Map</a>
+                <a href="#gallery" class="block py-2 hover:text-yellow-300">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-image h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">ChongQing</h1>
+            <p class="text-xl md:text-2xl mb-8">The beautiful City of China</p>
+            <a href="#about" class="bg-red-700 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Explore More</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">What is Chongqing?</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">The Mountain City</h3>
+                    <p class="text-gray-600 mb-4">
+                        Chongqing is a sprawling municipality in southwest China, known for its dramatic mountainous terrain, 
+                        hot pot cuisine, and the confluence of the Yangtze and Jialing Rivers.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        As one of China's four direct-controlled municipalities, Chongqing has a unique cultural identity 
+                        blending traditional Sichuan culture with modern urban development.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Why Visit Chongqing?</h3>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-2">
+                        <li>Experience the famous Chongqing hot pot - spicy and flavorful</li>
+                        <li>See stunning night views from the mountainous cityscape</li>
+                        <li>Explore the unique urban transportation including monorails through buildings</li>
+                        <li>Visit the starting point of Yangtze River cruises to the Three Gorges</li>
+                        <li>Discover a mix of modern skyscrapers and traditional Chinese architecture</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="video-container rounded-lg shadow-xl overflow-hidden">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HMo4DUWcBgg?si=zwuHKm-dxHwtZmLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Where is Chongqing?</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221446.9223880661!2d106.42586425820312!3d29.558571999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3690fc3b8a4d9d5d%3A0x5a1d4aeb8e1e1f7e!2sChongqing%2C%20China!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Location Information</h3>
+                    <p class="text-gray-600 mb-4">
+                        Chongqing is located in southwestern China at the confluence of the Yangtze and Jialing rivers. 
+                        It borders the provinces of Hubei, Hunan, Guizhou, Sichuan, and Shaanxi.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">Quick Facts:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-city text-red-600 mt-1 mr-2"></i>
+                                <span>Population: ~31 million (municipality)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-red-600 mt-1 mr-2"></i>
+                                <span>Area: 82,400 km² (31,800 sq mi)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-language text-red-600 mt-1 mr-2"></i>
+                                <span>Language: Southwestern Mandarin (Chongqing dialect)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-utensils text-red-600 mt-1 mr-2"></i>
+                                <span>Famous for: Hot pot, spicy cuisine, mountainous terrain</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-alt text-red-600 mt-1 mr-2"></i>
+                                <span>Best time to visit: Spring (March-May) and Autumn (September-November)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Top Attractions in Chongqing</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Discover the must-see places and experiences in this vibrant city
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Attraction 1 -->
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://news.cgtn.com/news/2023-08-01/Live-Stunning-night-view-of-Hongya-Cave-SW-China-s-Chongqing-1lUSMtXWCK4/img/efbe9eab4b314b3db3a516e6542fd572/efbe9eab4b314b3db3a516e6542fd572-750.png" alt="Hongya Cave" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Hongya Cave</h3>
+                        <p class="text-gray-600 mb-4">
+                            A stunning stilted building complex built into the cliffside along the Jialing River, 
+                            featuring shops, restaurants, and incredible night views.
+                        </p>
+                        <div class="flex items-center text-yellow-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-gray-600 ml-2">4.7 (12,345 reviews)</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 attraction-btn" data-name="Hongya Cave">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Attraction 2 -->
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.chinatoursnet.com/uploads/main/litimg/2020-05-09/5eb6218942f76.jpg" alt="Yangtze River Cableway" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Yangtze River Cableway</h3>
+                        <p class="text-gray-600 mb-4">
+                            A spectacular aerial tramway crossing the Yangtze River, offering panoramic views of 
+                            the city skyline and river traffic below.
+                        </p>
+                        <div class="flex items-center text-yellow-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="text-gray-600 ml-2">4.9 (8,765 reviews)</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 attraction-btn" data-name="Yangtze River Cableway">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Attraction 3 -->
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://windhorsetour.com/wp-content/uploads/2024-02/ciqikou.jpg" alt="Ci Qi Kou Ancient Town" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Ci Qi Kou Ancient Town</h3>
+                        <p class="text-gray-600 mb-4">
+                            A well-preserved ancient town with Ming and Qing dynasty architecture, 
+                            featuring traditional teahouses, craft shops, and local snacks.
+                        </p>
+                        <div class="flex items-center text-yellow-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-gray-600 ml-2">4.5 (9,876 reviews)</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 attraction-btn " data-name="Ci Qi Kou Ancient Town">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Attraction 4 -->
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/ba/50/97.jpg" alt="Three Gorges Museum" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Three Gorges Museum</h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive museum showcasing the history, culture, and ecology of the 
+                            Yangtze River and Three Gorges region.
+                        </p>
+                        <div class="flex items-center text-yellow-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="text-gray-600 ml-2">4.6 (5,432 reviews)</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 attraction-btn" data-name="Three Gorges Museum">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Attraction 5 -->
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.chinaeducationaltours.com/media/image/2025-03/17428700306155.jpg" alt="Jiefangbei CBD" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Jiefangbei CBD</h3>
+                        <p class="text-gray-600 mb-4">
+                            Chongqing's bustling central business district with towering skyscrapers, 
+                            luxury shopping, and vibrant nightlife.
+                        </p>
+                        <div class="flex items-center text-yellow-500 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="text-gray-600 ml-2">4.4 (7,654 reviews)</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 attraction-btn" data-name="Jiefangbei CBD">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+               
+                           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Chongqing in Pictures</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                A visual journey through the stunning landscapes and vibrant city life of Chongqing
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://as2.ftcdn.net/v2/jpg/06/54/70/29/1000_F_654702930_8PTo4zXFADC3DhpNky9YfXGDnZFg0aOQ.jpg" alt="Chongqing Skyline" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://www.shibanovel.com/wp-content/uploads/2020/03/%C3%89%C3%A3%C3%8D%C2%BC%C3%8D%C3%B8_501406207-1-scaled.jpg" alt="Chongqing Hot Pot" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://en.people.cn/mediafile/pic/BIG/20240603/25/7543989606599411405.png" alt="Chongqing Night View" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://c8.alamy.com/comp/T5413R/chongqing-china-november-03-this-is-a-street-with-cargo-shipments-and-local-workers-near-the-chaotianmen-docks-on-november-03-2018-in-chongqing-T5413R.jpg" alt="Chongqing Streets" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://www.pressenza.com/wp-content/uploads/2018/10/IMG_20181016_191359.jpg" alt="Chongqing River" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://asiantrails.b-cdn.net/wp-content/uploads/2022/03/full-day-8-dimensions-experience-in-chongqing-3.jpg" alt="Chongqing Architecture" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="load-more" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+                    <span>Load More Photos</span>
+                    <i class="fas fa-arrow-down ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden">
+        <div class="relative max-w-4xl w-full">
+            <button id="close-modal" class="absolute -top-12 right-0 text-white text-3xl hover:text-red-400">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-image" src="" alt="" class="w-full max-h-screen object-contain">
+            <p id="modal-caption" class="text-white text-center mt-4 text-lg"></p>
+        </div>
+    </div>
+
+    <!-- Attraction Modal -->
+    <div id="attraction-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden">
+        <div class="relative bg-white rounded-lg max-w-4xl w-full mx-4 max-h-screen overflow-y-auto">
+            <button id="close-attraction-modal" class="absolute top-4 right-4 text-gray-700 hover:text-red-600 text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-8">
+                <h3 id="attraction-title" class="text-3xl font-bold text-gray-800 mb-4"></h3>
+                <div id="attraction-content" class="text-gray-600 space-y-4">
+                    <!-- Content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">About Chongqing</h4>
+                    <p class="text-gray-400">
+                        Chongqing is a vibrant metropolis in southwest China known for its spicy cuisine, 
+                        mountainous terrain, and rich cultural heritage.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-red-400">About</a></li>
+                        <li><a href="#attractions" class="text-gray-400 hover:text-red-400">Attractions</a></li>
+                        <li><a href="#map" class="text-gray-400 hover:text-red-400">Map</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-red-400">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Travel Tips</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Best time to visit: Spring & Autumn</li>
+                        <li>Try the famous Chongqing hot pot</li>
+                        <li>Use the metro for easy transportation</li>
+                        <li>Learn basic Mandarin phrases</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://web.facebook.com/" class="text-gray-400 hover:text-red-400 text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/saroeun222" class="text-gray-400 hover:text-red-400 text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-400 text-2xl"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-400 text-2xl"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        Subscribe to our newsletter for travel updates and tips about Chongqing.
+                    </p>
+                    <div class="mt-4 flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Chongqing. All rights reserved !</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Image gallery modal
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        const imageModal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalCaption = document.getElementById('modal-caption');
+        const closeModal = document.getElementById('close-modal');
+        
+        galleryImages.forEach(image => {
+            image.addEventListener('click', function() {
+                modalImage.src = this.src;
+                modalCaption.textContent = this.alt;
+                imageModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        closeModal.addEventListener('click', function() {
+            imageModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        imageModal.addEventListener('click', function(e) {
+            if (e.target === imageModal) {
+                imageModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Attraction modal
+        const attractionButtons = document.querySelectorAll('.attraction-btn');
+        const attractionModal = document.getElementById('attraction-modal');
+        const attractionTitle = document.getElementById('attraction-title');
+        const attractionContent = document.getElementById('attraction-content');
+        const closeAttractionModal = document.getElementById('close-attraction-modal');
+        
+        attractionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const attractionName = this.getAttribute('data-name');
+                attractionTitle.textContent = attractionName;
+                
+                // Generate content based on attraction
+                let content = '';
+                
+                switch(attractionName) {
+                    case 'Hongya Cave':
+                        content = `
+                            <img src="https://news.cgtn.com/news/2023-08-01/Live-Stunning-night-view-of-Hongya-Cave-SW-China-s-Chongqing-1lUSMtXWCK4/img/efbe9eab4b314b3db3a516e6542fd572/efbe9eab4b314b3db3a516e6542fd572-750.png" alt="Hongya Cave" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <p>Hongya Cave is one of Chongqing's most iconic landmarks, a stilted building complex that clings to the cliffside along the Jialing River. This architectural marvel combines traditional Bayu stilted building style with modern commercial elements.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>11 floors of shops, restaurants, and bars with stunning river views</li>
+                                <li>Beautiful night illumination that makes it look like a "palace in the air"</li>
+                                <li>Traditional Chongqing architecture with modern amenities</li>
+                                <li>Great place to try local snacks and buy souvenirs</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Address:</strong> 88 Cangbai Road, Yuzhong District, Chongqing</p>
+                            <p><strong>Opening Hours:</strong> 11:00-23:00 daily</p>
+                            <p><strong>Admission:</strong> Free</p>
+                            <p><strong>Best Time to Visit:</strong> Evening for the night views</p>
+                        `;
+                        break;
+                        
+                    case 'Yangtze River Cableway':
+                        content = `
+                            <img src="https://www.chinatoursnet.com/uploads/main/litimg/2020-05-09/5eb6218942f76.jpg" alt="Yangtze River Cableway" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <p>The Yangtze River Cableway is one of Chongqing's most famous attractions, offering breathtaking aerial views of the city and the Yangtze River. This cable car system has been in operation since 1987 and provides a unique perspective of Chongqing's mountainous terrain.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>1164-meter long cableway crossing the Yangtze River</li>
+                                <li>Panoramic views of Chongqing's skyline and river traffic</li>
+                                <li>Especially beautiful at night when the city is illuminated</li>
+                                <li>One of the few urban cable cars still operating in China</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Address:</strong> 151 Xinhua Road, Yuzhong District (north station)</p>
+                            <p><strong>Opening Hours:</strong> 7:30-22:30 daily</p>
+                            <p><strong>Ticket Price:</strong> ¥20 one way, ¥30 round trip</p>
+                            <p><strong>Duration:</strong> About 5 minutes one way</p>
+                        `;
+                        break;
+                        
+                    case 'Ci Qi Kou Ancient Town':
+                        content = `
+                            <img src="https://windhorsetour.com/wp-content/uploads/2024-02/ciqikou.jpg" alt="Ci Qi Kou Ancient Town" class="w-full h-100 object-cover rounded-lg mb-4">
+                            <p>Ci Qi Kou (Porcelain Village) is a well-preserved ancient town with a history dating back over 1,700 years. Once an important porcelain production center, it's now a charming tourist destination with traditional architecture, teahouses, and craft shops.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Traditional Ming and Qing dynasty architecture</li>
+                                <li>Numerous teahouses where you can experience Sichuan tea culture</li>
+                                <li>Local handicrafts and souvenirs including porcelain, silk, and embroidery</li>
+                                <li>Authentic Chongqing snacks and street food</li>
+                                <li>Beautiful views of the Jialing River</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Address:</strong> Ci Qi Kou, Shapingba District, Chongqing</p>
+                            <p><strong>Opening Hours:</strong> 24 hours (shops generally open 9:00-21:00)</p>
+                            <p><strong>Admission:</strong> Free (some attractions inside may charge)</p>
+                            <p><strong>Recommended Visit Time:</strong> 2-3 hours</p>
+                        `;
+                        break;
+                        
+                    case 'Three Gorges Museum':
+                        content = `
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/ba/50/97.jpg" alt="Three Gorges Museum" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <p>The Chongqing China Three Gorges Museum is the largest monographic museum in China, showcasing the history, culture, and ecology of the Yangtze River and Three Gorges region. With over 170,000 cultural relics, it offers comprehensive insights into this important area.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Exhibitions on Three Gorges culture, Ba-Yu culture, and Chongqing's urban development</li>
+                                <li>Scale models of the Three Gorges Dam and surrounding area</li>
+                                <li>Collection of cultural relics from the Three Gorges area before the dam construction</li>
+                                <li>360-degree circular screen theater showing a documentary about the Three Gorges</li>
+                                <li>Beautiful architecture inspired by traditional Chinese elements</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Address:</strong> 236 Renmin Road, Yuzhong District, Chongqing</p>
+                            <p><strong>Opening Hours:</strong> 9:00-17:00 (last entry 16:00), closed Mondays</p>
+                            <p><strong>Admission:</strong> Free (ID required)</p>
+                            <p><strong>Recommended Visit Time:</strong> 2-3 hours</p>
+                        `;
+                        break;
+                        
+                    case 'Jiefangbei CBD':
+                        content = `
+                            <img src="https://www.chinaeducationaltours.com/media/image/2025-03/17428700306155.jpg" alt="Jiefangbei CBD" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <p>Jiefangbei (Liberation Monument) is Chongqing's bustling central business district and shopping area. Named after the monument at its center that commemorates China's victory in WWII, this area is the heart of modern Chongqing with skyscrapers, luxury shopping, and vibrant nightlife.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>The Liberation Monument - symbol of Chongqing's history</li>
+                                <li>High-end shopping malls and international brand stores</li>
+                                <li>Numerous restaurants serving Chongqing's famous hot pot</li>
+                                <li>Spectacular neon lights and digital displays at night</li>
+                                <li>Pedestrian streets with street performers and local snacks</li>
+                                <li>Close to other attractions like Hongya Cave and Chaotianmen</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Address:</strong> Minzu Road, Yuzhong District, Chongqing</p>
+                            <p><strong>Opening Hours:</strong> Shops generally 10:00-22:00</p>
+                            <p><strong>Admission:</strong> Free</p>
+                            <p><strong>Best Time to Visit:</strong> Evening for the night atmosphere</p>
+                        `;
+                        break;
+                        
+                    case 'Dazu Rock Carvings':
+                        content = `
+                            <img src="" alt="Dazu Rock Carvings" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <p>The Dazu Rock Carvings are a series of Chinese religious sculptures and carvings dating back as far as the 7th century AD. Designated a UNESCO World Heritage Site, these magnificent carvings represent the pinnacle of Chinese rock art with their aesthetic quality and diversity of subjects.</p>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Highlights:</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Over 50,000 statues with Buddhist, Confucian, and Taoist influences</li>
+                                <li>Most famous sites: Baodingshan and Beishan carvings</li>
+                                <li>Exquisite craftsmanship and well-preserved colors</li>
+                                <li>Scenic mountain setting with lush vegetation</li>
+                                <li>Insight into the religious harmony of ancient China</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Visitor Information:</h4>
+                            <p><strong>Location:</strong> Dazu District, about 1.5 hours from Chongqing city center</p>
+                            <p><strong>Opening Hours:</strong> 8:30-18:00 daily</p>
+                            <p><strong>Ticket Price:</strong> ¥115-¥135 depending on sites visited</p>
+                            <p><strong>Recommended Visit Time:</strong> Full day trip from Chongqing</p>
+                            <p><strong>Transport:</strong> Buses available from Chongqing or organized tours</p>
+                        `;
+                        break;
+                }
+                
+                attractionContent.innerHTML = content;
+                attractionModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        closeAttractionModal.addEventListener('click', function() {
+            attractionModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        attractionModal.addEventListener('click', function(e) {
+            if (e.target === attractionModal) {
+                attractionModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Load more photos functionality
+        document.getElementById('load-more').addEventListener('click', function() {
+            const gallery = document.querySelector('#gallery .grid');
+            const newPhotos = [
+                {
+                    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/CRT_Line_2_The_8-car_Train_and_4-car_Train_For_Yangjiaping_Station_20230706.jpg/960px-CRT_Line_2_The_8-car_Train_and_4-car_Train_For_Yangjiaping_Station_20230706.jpg',
+                    alt: 'Chongqing Monorail'
+                },
+                {
+                    src: 'https://source.ichongqing.info/2021/06/Bridge.jpg',
+                    alt: 'Chongqing Bridge'
+                },
+                {
+                    src: 'http://5b0988e595225.cdn.sohucs.com/images/20190627/615a71733fc74683a764aa3e501ef845.jpeg',
+                    alt: 'Chongqing Temple'
+                }
+            ];
+            
+            newPhotos.forEach(photo => {
+                const photoElement = document.createElement('div');
+                photoElement.className = 'rounded-lg overflow-hidden shadow-lg';
+                photoElement.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.alt}" class="w-full h-64 object-cover hover:scale-105 transition duration-300 cursor-pointer gallery-img">
+                `;
+                gallery.appendChild(photoElement);
+            });
+            
+            // Re-attach event listeners to new images
+            document.querySelectorAll('.gallery-img').forEach(image => {
+                image.addEventListener('click', function() {
+                    modalImage.src = this.src;
+                    modalCaption.textContent = this.alt;
+                    imageModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Disable button after loading all photos
+            this.disabled = true;
+            this.innerHTML = '<span>No More Photos</span>';
+            this.classList.remove('bg-red-600', 'hover:bg-red-700');
+            this.classList.add('bg-gray-400', 'cursor-not-allowed');
+        });
+    </script>
+</body>
+</html>
